@@ -8,7 +8,19 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+  workflow_dispatch:
+    # Optional: You can define inputs here that the user can provide
+    # when triggering manually via the UI.
+    # inputs:
+    #   environment:
+    #     description: 'Environment to deploy to'
+    #     required: true
+    #     default: 'staging'
+    #   build_only:
+    #     description: 'Skip deployment steps?'
+    #     required: false
+    #     type: boolean
+    #     default: false
 jobs:
   build:
 
